@@ -1,0 +1,24 @@
+{
+  "name": "tacoyaki-box-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "타코야키 박스 멀티플레이 릴레이 서버 (Socket.IO, 서버 권위 다이스)",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "verify:relay": "tsx verify-relay.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/integration.test.ts src/auth.test.ts src/characters.test.ts src/rooms.test.ts src/limits.test.ts src/assets.test.ts src/dm.test.ts src/posts.test.ts src/sessionlogs.test.ts src/dottown.test.ts src/dottownEconomy.test.ts src/plaza.test.ts src/dottownEstate.test.ts src/market.test.ts"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "socket.io-client": "^4.8.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.2"
+  }
+}
