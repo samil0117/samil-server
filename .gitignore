@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+# 계정 저장소(비밀번호 해시)·설정 — 커밋 금지, 머신 로컬
+data/
+# 내 PC 실행기가 받아두는 터널 도구(무거움) — 커밋 금지
+cloudflared.exe
